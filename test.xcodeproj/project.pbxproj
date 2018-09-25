@@ -13,6 +13,8 @@
 		6EBB9B7E215A06E900F2DF01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB9B7D215A06E900F2DF01 /* Assets.xcassets */; };
 		6EBB9B81215A06E900F2DF01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB9B7F215A06E900F2DF01 /* LaunchScreen.storyboard */; };
 		6EBB9B84215A06E900F2DF01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB9B83215A06E900F2DF01 /* main.m */; };
+		6EBB9B8C215A070700F2DF01 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EBB9B8B215A070700F2DF01 /* JavaScriptCore.framework */; };
+		6EBB9B8E215A07A900F2DF01 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB9B8D215A07A900F2DF01 /* test.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		6EBB9B80215A06E900F2DF01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EBB9B82215A06E900F2DF01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EBB9B83215A06E900F2DF01 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EBB9B8B215A070700F2DF01 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		6EBB9B8D215A07A900F2DF01 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EBB9B8C215A070700F2DF01 /* JavaScriptCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,7 @@
 			children = (
 				6EBB9B73215A06E700F2DF01 /* test */,
 				6EBB9B72215A06E700F2DF01 /* Products */,
+				6EBB9B8A215A070700F2DF01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +68,7 @@
 				6EBB9B75215A06E700F2DF01 /* AppDelegate.m */,
 				6EBB9B77215A06E700F2DF01 /* ViewController.h */,
 				6EBB9B78215A06E700F2DF01 /* ViewController.m */,
+				6EBB9B8D215A07A900F2DF01 /* test.html */,
 				6EBB9B7A215A06E700F2DF01 /* Main.storyboard */,
 				6EBB9B7D215A06E900F2DF01 /* Assets.xcassets */,
 				6EBB9B7F215A06E900F2DF01 /* LaunchScreen.storyboard */,
@@ -69,6 +76,14 @@
 				6EBB9B83215A06E900F2DF01 /* main.m */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		6EBB9B8A215A070700F2DF01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB9B8B215A070700F2DF01 /* JavaScriptCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EBB9B8E215A07A900F2DF01 /* test.html in Resources */,
 				6EBB9B81215A06E900F2DF01 /* LaunchScreen.storyboard in Resources */,
 				6EBB9B7E215A06E900F2DF01 /* Assets.xcassets in Resources */,
 				6EBB9B7C215A06E700F2DF01 /* Main.storyboard in Resources */,
@@ -286,7 +302,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74ZNLL3F4H;
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +320,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 74ZNLL3F4H;
 				INFOPLIST_FILE = test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
